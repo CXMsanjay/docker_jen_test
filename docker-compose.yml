@@ -1,0 +1,16 @@
+---
+version: '3'
+services:
+  web:
+    build:
+      context:  .
+    stdin_open: true
+    tty: true
+    command: /bin/bash
+  db:
+    build:
+      context:  .
+    stdin_open: true
+    tty: true
+    command: /bin/bash
+...
